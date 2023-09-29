@@ -1,0 +1,25 @@
+.light {
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+}
+
+div {
+    display: flex;
+    margin-left: 20px;
+}
+
+#lightswitch {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+}
+
+.lightOff {
+    color: white;
+}

@@ -1,0 +1,23 @@
+.content > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(11, 50px);
+}
+
+.tekst{
+    display: flex;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+
+}
+div{
+    user-select: none;
+}

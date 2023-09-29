@@ -1,0 +1,12 @@
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 20px;
+    border: 1px solid grey;
+}
+
+.border {
+    margin-left: 10px;
+}

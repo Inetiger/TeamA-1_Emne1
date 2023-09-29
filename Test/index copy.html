@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        let equalfound ='';
+        const headgear = ['kaps', 'lue', 'flosshat', 'tophat'];
+        const app = document.getElementById('app');
+
+        function updateView(){
+            let html = `
+    <div>${equalfound}</div>
+            `;
+            app.innerHTML = html;
+        }
+
+        updateView();
+        beginRandom();
+
+        function beginRandom(){
+            // for(let i = 0; i <= headgear.length; i++){
+            //     equalfound += `${i} er ${headgear[i]}`;
+            // }
+            let i = 0;
+            while(i < headgear.length){
+                i++;
+                equalfound += `${i} er ${headgear[i]} <br>`;
+            }
+            updateView();
+        }
+    </script>
+</body>
+
+</html>

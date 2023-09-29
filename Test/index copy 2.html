@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        const app = document.getElementById('app');
+        let cartViewer = '';
+        const cart = [];
+        let cartItem;
+        let number = 0;
+
+
+        updateView();
+        function updateView() {
+            let html = /*html*/ `
+            <input type="type" placeholder="skriv her" onchange=putInCart(this)>
+            <input type="button" value="legg i handlevognen" onclick=addCart()>
+            <div>${cartViewer}</div>
+            `;
+            app.innerHTML = html;
+        }
+
+        function putInCart(newValue) {
+            cartItem = newValue.value;
+        }
+
+        function addCart() {
+            cart.push(cartItem);
+            cartViewer += `<li> ${cart[number]} </li>`;
+            number++;
+            updateView();
+        }
+        
+        // function addCart() {
+        //     cart.push(cartItem);
+        //     cartViewer += '<li>';
+        //     cartViewer += cart[number];
+        //     cartViewer += '</li>';
+        //     number++;
+        //     updateView();
+        // }
+
+        
+    </script>
+</body>
+
+</html>

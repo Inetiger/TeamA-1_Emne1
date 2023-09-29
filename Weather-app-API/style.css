@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+}
+
+.conatiner {
+    background: radial-gradient(rgb(144, 248, 222), rgb(26, 40, 78));
+    width: 100dvw;
+    height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: linear-gradient(to right, rgb(241, 131, 131), rgb(245, 235, 103));
+    border-radius: 20dvh;
+    padding: 2%;
+    gap: 3%;
+    
+    width: 70%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content>div {
+    position: relative;
+    left: 10%;
+}
+.content>h1 {
+    position: relative;
+    left: 18%;
+}
+
+.weatherMap {
+    position: fixed;
+    right: 20%;
+    border-radius: 5dvh;
+
+    height: 30%;
+}
+
+.weatherInformation {
+    background: linear-gradient(to right, rgb(91, 195, 221), rgb(28, 124, 161));
+    border-radius: 2dvh;
+    padding: 0% 2% 0.5% 2%;
+
+    width: 25%;
+}
+
+.weatherInformation>li {
+    background: linear-gradient(to right, rgb(159, 245, 48), rgb(154, 238, 147));
+    border-radius: 10dvh;
+    margin: 2%;
+    padding-left: 10%;
+
+    display: flex;
+}
+
+.weatherInformation>h1>input {
+    pointer-events: none;
+}

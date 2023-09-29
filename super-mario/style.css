@@ -1,0 +1,151 @@
+.container {
+    background-color: black;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: grey;
+    border-radius: 10%;
+    padding: 2%;
+
+    width: 50%;
+    height: 50%;
+
+    display: grid;
+    grid-template: 4fr 2fr 1fr /1fr 1fr 1fr 1fr 1fr;
+}
+
+.content input {
+    display: flex;
+    justify-self: center;
+}
+
+.btnSizing {
+    height: fit-content;
+    width: fit-content;
+}
+
+.Player1:hover {
+    background-color: pink;
+    border-radius: 10%;
+}
+
+.Player2:hover {
+    background-color: lightgreen;
+    border-radius: 10%;
+}
+
+.statCharacter1 {
+    background-color: pink;
+
+    grid-area: 2/2;
+}
+
+.BtnChoosePlayer1 {
+    grid-area: 3/2;
+
+    display: flex;
+    align-self: center;
+}
+
+.statCharacter2 {
+    background-color: lightgreen;
+
+    grid-area: 2/4;
+}
+
+.BtnChoosePlayer2 {
+    grid-area: 3/4;
+
+    display: flex;
+    align-self: center;
+}
+
+.character {
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.BtnStartBattle {
+    grid-area: 2/3;
+
+    display: flex;
+    align-self: center;
+}
+
+.battle {
+    background-image: url(img/Battle.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.gridBattle {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template: 1fr 42%/ 1fr 1fr;
+}
+
+/* bildet av valg karakter 1 */
+.characterOne {
+    justify-self: center;
+}
+
+/* bildet av valg karakter 2 */
+.characterTwo {
+    justify-self: center;
+}
+
+/* liv for karakter 1 */
+.healthBarOne {
+    display: flex;
+    justify-content: center;
+}
+
+/* liv for karakter 2 */
+.healthBarTwo {
+    display: flex;
+    justify-content: center;
+}
+
+/* bare css for healthbars */
+.healthSizing {
+    background-color: lightgreen;
+    margin: 20px;
+
+    height: fit-content;
+    width: 200px;
+    
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.vinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90svh;
+    color: red;
+    font-size: 500%;
+}

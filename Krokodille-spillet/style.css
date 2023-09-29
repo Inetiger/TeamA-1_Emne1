@@ -1,0 +1,24 @@
+.content{
+    display: flex;
+}
+
+.content div{
+    margin-right: 1%;
+}
+
+.box{
+    width: 6%;
+}
+
+.answering{
+    display: flex;
+}
+
+.answering div{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.ali{
+    width: 20%;
+}

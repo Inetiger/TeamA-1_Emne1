@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Filler</title>
+    <!-- CSS fil -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Vis/skjul knapp -->
+    <input class="btn" type="button" value=Vis/Skjul onclick=showHide()>
+    <!--  -->
+    <!-- Inventory -->
+    <fieldset class="btn" id="hideMe">
+        <legend>Inventory</legend>
+        <select class="btn" id="Category" name="Category" onchange="categoryChange(this)">
+            <option value="none">Ingen</option>
+            <option value="food">Mat</option>
+            <option value="accesories">Tilbehør</option>
+            <option value="weapon">Våpen</option>
+            <option value="misc">Diverse</option>
+        </select>
+        <input class="btn" list="Items" placeholder="Søk her" onchange="searcheBar(this)">
+        <datalist id="Items">
+            <option value="Stein">
+            <option value="Suppe">
+            <option value="Kaffe">
+            <option value="Pinne">
+            <option value="Tau">
+            <option value="Sopp">
+            <option value="Drikke">
+            <option value="skokolade">
+            <option value="Saks">
+            <option value="Sko">
+            <option value="Solbriller">
+            <option value="Kanin">
+            <option value="Kniv">
+            <option value="Øks">
+            <option value="Fyrstikk">
+            <option value="Fisk">
+        </datalist>
+        <div id="inventoryGrid">
+            <input type="image" class="inv-item" src="https://www.freeiconspng.com/uploads/fish-png-6.png" id="invFish" width=auto
+                height="128">
+            <input type="image" class="inv-item" src="https://www.freeiconspng.com/uploads/stone-png-1.png" id="invStone" width=auto
+                height="128">
+            <input type="image" class="inv-item" src="https://www.freeiconspng.com/uploads/the-soup-tea-png-0.png" id="invSoup"
+                width=auto height="128">
+            <input type="image" class="inv-item"
+                src="https://images.unsplash.com/photo-1422207134147-65fb81f59e38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                id="invCoffee" width="auto" height="128">
+            <input type="image" class="inv-item" src="https://www.pngmart.com/files/5/Bamboo-Stick-PNG-Pic.png" id="invStick"
+                width="auto" height="128">
+            <input type="image" class="inv-item" src="https://www.freeiconspng.com/uploads/rope-cord-sisal-string-material-png-24.png"
+                id="invRope" width="auto" height="128">
+            <input type="image" class="inv-item" src="https://www.freeiconspng.com/uploads/mushroom-png-photo-2.png" id="invMushroom"
+                width="auto" height="128">
+            <input type="image" class="inv-item"
+                src="https://www.freeiconspng.com/uploads/coca-cola-drink-png-image-coca-cola-format-png-9.png"
+                id="invDrink" width="auto" height="128">
+            <input type="image" class="inv-item" class="inv-item" src="https://www.freeiconspng.com/uploads/chocolate-png-3.png" id="invChocolate"
+                width="auto" height="128">
+            <input type="image" class="inv-item" src="https://www.freeiconspng.com/uploads/scissors-icon-10.png" id="invScissors"
+                width="auto" height="128">
+            <input type="image" class="inv-item" src="https://www.pngmart.com/files/22/Boots-PNG.png" id="invBoots" width="auto"
+                height="128">
+            <input type="image" class="inv-item"
+                src="https://www.freeiconspng.com/uploads/sport-sunglasses-png-image--sport-sunglasses-png-image-7.png"
+                id="invSunglasses" width="auto" height="128">
+            <input type="image" class="inv-item" src="https://www.freeiconspng.com/uploads/rabbit-png-30.png" id="invRabbit" width="auto"
+                height="128">
+            <input type="image" class="inv-item" src="https://www.freeiconspng.com/uploads/knife-png-17.png" id="invKnife" width="auto"
+                height="128">
+            <input type="image" class="inv-item" src="https://freepngimg.com/thumb/axe/9-2-axe-png-pic.png" id="invAxe" width="auto"
+                height="128">
+            <input type="image" class="inv-item" src="https://www.pngmart.com/files/8/Lighter-PNG-Photos.png" id="invLighter"
+                width="auto" height="128">
+        </div>
+    </fieldset>
+    <!-- Item på utsida -->
+    <div>
+        <input id="Fish" type="image" onclick="pickUp('Fish')"
+            src="https://www.freeiconspng.com/uploads/fisherman-fishing-png-23.png" alt="" width=auto height="80" />
+        <input id="Stone" type="image" onclick="pickUp('Stone')" src="https://www.freeiconspng.com/uploads/stone-png-1.png"
+            alt="" width=auto height="128" />
+        <input id="Soup" type="image" onclick="pickUp('Soup')" src="https://www.freeiconspng.com/uploads/the-soup-tea-png-0.png"
+            alt="" width=auto height="128" />
+        <input id="Coffee" type="image" onclick="pickUp('Coffee')"
+            src="https://www.freeiconspng.com/uploads/cup-coffee-icon-14.png" alt="" width=auto height="80" />
+        <input id="Stick" type="image" onclick="pickUp('Stick')" src="https://www.pngmart.com/files/5/Bamboo-Stick-PNG-Pic.png"
+            alt="" width=auto height="128" />
+        <input id="Mushroom" type="image" onclick="pickUp('Mushroom')"
+            src="https://www.freeiconspng.com/uploads/mushroom-png-photo-2.png" alt="" width=auto height="128" />
+        <input id="Drink" type="image" onclick="pickUp('Drink')"
+            src="https://www.seekpng.com/png/full/361-3613355_samba-cold-drink-machine-cold-drink-vending-machine.png"
+            alt="" width=auto height="90" />
+        <input id="Chocolate" type="image" onclick="pickUp('Chocolate')"
+            src="https://www.freeiconspng.com/uploads/chocolate-png-3.png" alt="" width=auto height="30" />
+        <input id="Boots" type="image" onclick="pickUp('Boots')"
+            src="https://clipart-library.com/images/LTdoy55kc.png"
+            alt="" width=auto height="128" />
+        <input id="Sunglasses" type="image" onclick="pickUp('Sunglasses')"
+            src="https://www.freeiconspng.com/uploads/sport-sunglasses-png-image--sport-sunglasses-png-image-7.png"
+            alt="" width=auto height="40" />
+        <input id="Rabbit" type="image" onclick="pickUp('Rabbit')" src="https://www.freeiconspng.com/uploads/rabbit-png-30.png"
+            alt="" width=auto height="128" />
+        <input id="Knife" type="image" onclick="pickUp('Knife')" src="https://www.freeiconspng.com/uploads/knife-png-17.png"
+            alt="" width=auto height="50" />
+        <input id="Axe" type="image" onclick="pickUp('Axe')" src="https://freepngimg.com/thumb/axe/9-2-axe-png-pic.png" alt=""
+            width=auto height="100" />
+        <input id="Lighter" type="image" onclick="pickUp('Lighter')"
+            src="https://www.pngmart.com/files/8/Lighter-PNG-Photos.png" alt="" width=auto height="80" />
+    </div>
+    <!-- Klaskeladden -->
+    <input class="klaskeladden" type="image" onclick="showHide()" src="http://clipart-library.com/img/1307188.gif" alt="Klaskeladden" width="auto" height="150">
+    <!--  -->
+    <!-- Javascript fil -->
+    <script src="script.js"></script>
+</body>
+</html>

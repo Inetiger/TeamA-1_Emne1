@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: grey;
+    
+    width: 100dvw;
+    height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: rgb(226, 219, 206);
+    border: 1px solid black;
+
+    width: 80%;
+    height: 60%;
+
+    display: grid;
+    grid-template: 1fr 2fr/1fr 1fr;
+}
+
+.inputFelt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputFelt>input {
+    width: 40%;
+    height: 10%;
+}
+
+.textFelt {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 2%;
+
+    font-size: x-large;
+
+    width: 70%;
+    height: 70%;
+}

@@ -1,0 +1,33 @@
+.square {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.selected {
+    border: 3px solid black;
+}
+
+.colors {
+    display: flex;
+    justify-content: center;
+    border: solid 1px grey;
+    width: 80px;
+    background-color: lightgray;
+    margin: 10px;
+    user-select: none;
+}
+
+.a1 {
+    background-color: lightgreen;
+}
+
+.a2 {
+    background-color: lightBLUE;
+}
+
+.a3 {
+    background-color: lightyellow;
+}

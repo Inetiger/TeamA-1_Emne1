@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://cdn.wallpapersafari.com/83/37/2sA69f.jpg);
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <button type="button" onclick="showHide()">Vis/Skjul</button>
+        <br>
+        <br>
+        <fieldset id="hideMe" style="height: 50svh; width: 80svh; background-color: rgba(0, 0, 0, 0.603);">
+            <legend style="color: white;">Inventory</legend>
+            <select id="Category" name="Category">
+                <option value="None">Ingen</option>
+                <option value="Food">Mat</option>
+                <option value="Accesories">Tilbehør</option>
+                <option value="Weapon">Våpen</option>
+                <option value="Misc">Diverse</option>
+              </select>
+            <input list="Items" placeholder="søk her">
+            <datalist id="Items">
+                <option value="Stone">
+                <option value="Tin Can">
+                <option value="Hot cup of coffie">
+                <option value="Stick">
+                <option value="Rope">
+                <option value="Mushroom">
+                <option value="Drink">
+                <option value="Chocolate">
+                <option value="Scissors">
+                <option value="Boots">
+                <option value="Sunglasses">
+                <option value="Rabbit">
+                <option value="Knife">
+                <option value="Axe">
+                <option value="Lighter">
+            </datalist>
+            <br>
+            <div
+                style="display: grid; height: 40svh; margin-top: 1svh; grid-template-columns: repeat(3, auto); overflow-y: scroll;">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1584715642381-6f1c4b452b1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                     width=auto height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1615589484252-c70def71bb4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80"
+                     width=auto height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1422207134147-65fb81f59e38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                     width="auto" height="128">
+                <label style="color: white;">Stone</label>
+                <label style="color: white;">Tin can</label>
+                <label style="color: white;">Hot cup of coffie</label>
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1615485020471-b66207f5e3bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                     width="auto" height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1615486172027-23610c38d3a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                     width="auto" height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1505820013142-f86a3439c5b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                     width="auto" height="128">
+                <label style="color: white;">Stick</label>
+                <label style="color: white;">Rope</label>
+                <label style="color: white;">Mushroom</label>
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1605548230624-8d2d0419c517?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                     width="auto" height="128">
+                <input type="image"
+                    src="https://plus.unsplash.com/premium_photo-1670426502004-1bcd3215b425?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                     width="auto" height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1586363052121-5ef0f5b1fdb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=691&q=80"
+                     width="auto" height="128">
+                <label style="color: white;">Drink</label>
+                <label style="color: white;">Chocolate</label>
+                <label style="color: white;">Scissors</label>
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
+                     width="auto" height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                     width="auto" height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1619447257726-fe312296ee9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                     width="auto" height="128">
+                <label style="color: white;">Boots</label>
+                <label style="color: white;">Sunglasses</label>
+                <label style="color: white;">Rabbit</label>
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1596633609591-e4e1e9e06b7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                     width="auto" height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1545476745-9211a9e7cca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                     width="auto" height="128">
+                <input type="image"
+                    src="https://images.unsplash.com/photo-1576969500732-12cc9992a5f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                     width="auto" height="128">
+                    <label style="color: white;">Knife</label>
+                    <label style="color: white;">Axe</label>
+                    <label style="color: white;">Lighter</label>
+                </div>
+            </fieldset>
+    </form>
+
+    <script>
+        let inventory = false;
+
+        showHide();
+        function showHide() {
+            inventory = !inventory
+            if (inventory == true) {
+                document.getElementById('hideMe').classList.add('hide');
+            }
+            else {
+                document.getElementById('hideMe').classList.remove('hide');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.square {
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(2, 10rem);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    align-items: center;
+}

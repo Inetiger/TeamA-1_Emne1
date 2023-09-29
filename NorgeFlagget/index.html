@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.rød {
+            background-color: red;
+        }
+
+
+        div.hvit {
+            background-color: white;
+        }
+
+        div.blå {
+            background-color: blue;
+        }
+
+        div.R1 {
+            grid-area: r1;
+        }
+        div.R2 {
+            grid-area: r2;
+        }
+        div.R3 {
+            grid-area: r3;
+        }
+        div.R4 {
+            grid-area: r4;
+        }
+
+        div.B1 {
+            grid-area: b1;
+        }
+        div.B2 {
+            grid-area: b2;
+        }
+        div.B3 {
+            grid-area: b3;
+        }
+
+        body.flagg {
+            margin: 0px;
+            padding: 0px;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 6fr 1fr 2fr 1fr 12fr;
+            grid-template-rows: 6fr 1fr 2fr 1fr 6fr;
+            grid-template-areas:
+                "r1 . b1 . r2"
+                ". . b1 . ."
+                "b2 b2 b1 b3 b3"
+                ". . b1 . ."
+                "r3 . b1 . r4";
+        }
+    </style>
+</head>
+
+<body class="flagg">
+    <div class="rød R1"></div>
+    <div class="rød R2"></div>
+    <div class="rød R3"></div>
+    <div class="rød R4"></div>
+    <div class="blå B1"></div>
+    <div class="blå B2"></div>
+    <div class="blå B3"></div>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header styles */
+header {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-left: -40px;
+}
+
+.navbar li {
+    margin-right: 7px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Main styles */
+
+.main-horisontal {
+ display: flex;
+ margin-right: 20px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 500px 300px;
+    gap: 0px 20px;
+}
+
+.info-ytre-boks {
+    width: 500px;
+    margin-left: 20px;
+}
+
+.info-ytre-boks .overskrift {
+ text-align: center;
+ margin-bottom: 0;
+}
+
+.info {
+    padding: 10px 10px 15px 10px;
+    background-color: #D3D3D3;
+}
+
+.info ul {
+    margin-bottom: 5px;
+}
+
+.verktøy-overskrift {
+    color: white;
+    background-color: #3CBB54;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px 0px 5px 0px;
+    border: 1.8px solid #7D7D7D;
+}
+
+.HTML-overskrift {
+    color: white;
+    background-color: #4985ED;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px 0px 5px 0px;
+    border: 1.8px solid #7D7D7D;
+}
+
+.CSS-overskrift {
+    color: white;
+    background-color: #DB3237;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px 0px 5px 0px;
+    border: 1.8px solid #7D7D7D;
+}
+
+.Javascript-overskrift {
+    color: white;
+    background-color: #F4C20E;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px 0px 5px 0px;
+    border: 1.8px solid #7D7D7D;
+}
+
+.hode-kropp-og-ben-overskrift {
+    color: white;
+    background-color: #36393F;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px 0px 5px 0px;
+    border: 1.8px solid #7D7D7D;
+}
+
+.hode-kropp-og-ben-info {
+    text-align: center;
+}
+
+.hode-kropp-og-ben-info img {
+    margin-bottom: -4px;
+}
+
+.hode, .overkropp, .bein {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hode-kropp-og-ben-info button {
+    cursor: pointer;
+}
+
+.skjulEllerVis-info {
+    display: none;
+}
+
+.skjul {
+    display: none;
+}
+
+.vis {
+    display: block;
+}

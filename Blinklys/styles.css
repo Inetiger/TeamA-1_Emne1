@@ -1,0 +1,47 @@
+body {
+    background-color: #e9e9e9;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
+    height: 40svh;
+    width: 40svh;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+#light {
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 4.5svh;
+    margin-bottom: 0.7svh;
+}
+
+.notOn {
+    background-color: grey;
+}
+
+.changeRed {
+    background-color: red;
+}
+
+.changeYellow {
+    background-color: yellow;
+}
+
+.changeGreen {
+    background-color: green;
+}

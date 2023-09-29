@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(88, 126, 32);
+
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+}
+
+.container {
+    width: 100dvw;
+    height: 100dvh;
+
+    display: grid;
+    grid-template: 1fr 1fr 5fr 1fr/1fr 6fr 1fr;
+}
+
+.backpack {
+    width: auto;
+    height: auto;
+
+    grid-area: 1/1/3;
+    justify-self: center;
+    align-self: center;
+}
+
+.backpack>input {
+    background-color: rgba(31, 30, 30, 0.74);
+
+    height: 160px;
+}
+
+.backpack>input:hover {
+    background-color: rgb(165, 80, 80);
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.171);
+
+    width: auto;
+    height: auto;
+
+    grid-area: 2/2/4;
+}
+
+.pokemon {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 60%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn>input {
+    border-radius: 10%;
+    padding: 4%;
+
+    font-size: xx-large;
+}
+
+.tekstLost {
+    background-color: rgba(194, 53, 53, 0.562);
+    height: 75dvh;
+
+    font-size: xx-large;
+}
+
+.tekstWon {
+    background-color: rgba(213, 255, 59, 0.562);
+    height: 75dvh;
+
+    font-size: xx-large;
+}
+
+.inventoryContainer {
+    background-color: rgba(0, 0, 0, 0.63);
+
+    width: 100dvw;
+    height: 100dvh;
+
+    display: grid;
+    grid-template: 1fr 1fr 5fr 1fr/1fr 6fr 1fr;
+}
+
+.inventoryContent {
+    background-color: rgba(255, 255, 255, 0.171);
+    padding: 2%;
+    gap: 1dvh;
+
+    width: auto;
+    height: auto;
+
+    overflow: auto;
+
+    grid-area: 2/2/4;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.inventoryContent>div {
+    background-color: rgba(0, 0, 0, 0.644);
+
+    width: 330px;
+    height: 360px;
+}
+
+.inventoryContent>div>div {
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.inventoryContent>div>input {
+    width: 100%;
+}

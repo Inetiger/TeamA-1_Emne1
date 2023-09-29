@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        let equalfound;
+        const app = document.getElementById('app');
+
+        function updateView(){
+            let html = `
+    <div>${equalfound}</div>
+            `;
+            app.innerHTML = html;
+        }
+
+        updateView();
+        beginRandom();
+
+        function beginRandom(){
+            let random1 = 0;
+            let random2 = 1;
+            while (random1 !== random2) {
+                random1 = Math.floor(Math.random() * 10);
+                random2 = Math.floor(Math.random() * 10);
+            }
+            equalfound = 'equal numbers found = ' + random1;
+            updateView();
+        }
+    </script>
+</body>
+
+</html>

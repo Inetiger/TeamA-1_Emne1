@@ -1,0 +1,151 @@
+body {
+    background-image: url(https://cdn.wallpapersafari.com/83/37/2sA69f.jpg);
+    background-repeat: no-repeat;
+}
+
+fieldset {
+    height: 50svh;
+    width: 80svh;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+legend {
+    color: white;
+}
+
+#inventoryGrid {
+    display: grid;
+    height: 40svh;
+    margin-top: 1svh;
+    grid-template-columns: repeat(3, auto);
+    overflow-y: scroll;
+}
+
+.hide {
+    display: none;
+}
+
+.invhide {
+    display: none;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+}
+
+div {
+    user-select: none;
+}
+
+.btn {
+    font-size: 20px;
+}
+
+#Fish {
+    position: fixed;
+    top: 65svh;
+    left: 110svh;
+}
+
+#Stone {
+    position: fixed;
+    top: 75svh;
+    left: 73svh;
+}
+
+#Soup {
+    position: fixed;
+    top: 70svh;
+    left: 73svh;
+}
+
+#Coffee {
+    position: fixed;
+    top: 90svh;
+    left: 20svh;
+}
+
+#Stick {
+    position: fixed;
+    top: 65svh;
+    left: 40svh;
+}
+
+#Mushroom {
+    position: fixed;
+    top: 80svh;
+    left: 50svh;
+}
+
+#Drink {
+    position: fixed;
+    top: 62svh;
+    left: 73svh;
+}
+
+#Chocolate {
+    position: fixed;
+    top: 90svh;
+    left: 120svh;
+}
+
+#Boots {
+    z-index: 2;
+    position: fixed;
+    top: 70svh;
+    left: 120svh;
+}
+
+#Sunglasses {
+    position: fixed;
+    top: 39svh;
+    left: 38svh
+}
+
+#Rabbit {
+    position: fixed;
+    top: 80svh;
+    left: 140svh;
+}
+
+#Knife {
+    position: fixed;
+    top: 75svh;
+    left: 170svh;
+}
+
+#Axe {
+    position: fixed;
+    top: 65svh;
+    left: 42.5svh;
+}
+
+#Lighter {
+    position: fixed;
+    top: 85svh;
+    left: 30svh;
+}
+
+.klaskeladden {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: fixed;
+    top: 59svh;
+    left: 106svh;
+}
+
+.walking {
+    translate: 20svh 0 0;
+    transition: translate 3s;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.walking-back {
+    translate: 0 0 0;
+    transition: translate 3s;
+    -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}

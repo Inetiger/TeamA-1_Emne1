@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    user-select: none;
+}
+
+.container {
+    background: linear-gradient(to right,rgb(97, 189, 231), rgb(70, 228, 175));
+    
+    width: 100dvw;
+    height: 100dvh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: linear-gradient(to right, rgb(145, 235, 145), rgb(67, 165, 67));
+    border-radius: 5dvh;
+    margin: 0 0 4% 0;
+    padding: 2%;
+
+    width: 60%;
+    height: 60%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.toGrassFieldHalf {
+    background: linear-gradient(to top,rgb(66, 139, 73), rgb(127, 233, 137));
+    border-radius: 5dvh;
+
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+.grassFieldImage {
+    height: 120%;
+    width: 100%;
+}
+
+.grassFieldText {
+    background-color: rgba(94, 94, 94, 0.733);
+    border-radius: 5dvh;
+    color: white;
+    font-size: xx-large;
+
+    margin: 4% 0 0 0;
+    padding: 0.5% 2% 0.5% 2%;
+
+    position: fixed;
+}
+
+.grassFieldBtn {
+    background-color: rgba(94, 94, 94, 0.733);
+    color: white;
+    font-size: xx-large;
+
+    margin: 0 0 4% 0;
+    
+    align-self: flex-end;
+    position: fixed;
+}
+
+.grassFieldBtn:hover {
+    background-color: rgba(172, 172, 172, 0.733);
+}
+
+.toGymHalf {
+    background: linear-gradient(to top,rgb(215, 218, 80), rgb(223, 224, 149));
+    border-radius: 5dvh;
+
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+.gymText {
+    background-color: rgba(94, 94, 94, 0.733);
+    border-radius: 5dvh;
+    color: white;
+    font-size: xx-large;
+
+    margin: 4% 0 0 0;
+    padding: 0.5% 2% 0.5% 2%;
+
+    position: fixed;
+}
+
+.gymBtn {
+    background-color: rgba(94, 94, 94, 0.733);
+    color: white;
+    font-size: xx-large;
+
+    margin: 0 0 4% 0;
+    
+    align-self: flex-end;
+    position: fixed;
+}
+
+.gymBtn:hover {
+    background-color: rgba(172, 172, 172, 0.733);
+}
+
+.pokemon {
+    pointer-events: none;
+}
+
+.pokeball {
+    z-index: 2;
+}
+
+.inventoryScreen {
+    bottom: 5%;
+    background: linear-gradient(to right,rgba(50, 97, 119, 0.582), rgba(36, 116, 89, 0.541));
+    border-radius: 5dvh;
+    padding: 2%;
+    gap: 1dvh;
+    
+    width: 71%;
+    height: 70%;
+    
+    overflow: auto;
+    
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.inventoryScreen::-webkit-scrollbar {
+    display: none;
+}
+
+.inventoryScreen>div {
+    background-color: rgba(0, 0, 0, 0.644);
+
+    width: 330px;
+    height: 360px;
+}
+
+.inventoryScreen>input {
+    font-size: x-large;
+}
+
+.inventoryScreen>div>div {
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.inventoryScreen>div>input {
+    width: 100%;
+}
+
+.invicible {
+    display: none;
+}
+
+.backToChoosingBtn {
+    background-color: rgba(94, 94, 94, 0.733);
+    color: white;
+    font-size: xx-large;
+
+    width: fit-content;
+
+    margin: 0 0 4% 0;
+
+    align-self: center;
+}
+
+.backToChoosingBtn:hover {
+    background-color: rgba(172, 172, 172, 0.733);
+}
+
+.battleZone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.escapeOrFightBtns {
+    position: fixed;
+    right: 0;
+
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.escapeOrFightBtns>input {
+    border-radius: 2dvh;
+    font-size: xx-large;
+}
+
+.escapeOrFightBtns>input:hover {
+    background-color: rgba(92, 92, 92, 0.801);
+}
+
+.chanceText {
+    font-size: x-large;
+
+    display: flex;
+    justify-content: center;
+}
+
+.chanceNumb {
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+}
+
+.comingSoonText {
+    background-color: rgba(255, 182, 182, 0.719);
+    border-radius: 10dvh;
+    padding: 0 4% 0 4%;
+    font-size: 500%;
+}
+
+.contentdiv {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

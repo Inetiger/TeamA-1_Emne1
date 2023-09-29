@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.centrate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackBorder {
+    border: 1px solid black;
+}
+
+.container {
+    background-color: black;
+
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.content {
+    background-color: grey;
+
+    width: 50dvw;
+    height: 50dvh;
+}
+
+.chatBotFace {
+    border-radius: 50%;
+
+    width: 20dvw;
+    height: 40dvh;
+
+    display: grid;
+    grid-template: 1fr 1fr 1fr 0.5fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+}
+
+.chatBotFace>div {
+    justify-self: center;
+    align-self: center;
+}
+
+.chatBotEyes {
+    background-color: white;
+    border-radius: 50%;
+
+    height: 100%;
+    width: 100%;
+}
+
+.chatBotRightEye {
+    grid-area: 2/2;
+}
+
+.chatBotLeftEye {
+    grid-area: 2/4;
+}
+
+.chatBotPupils {
+    background-color: black;
+    border-radius: 50%;
+
+    height: 30%;
+    width: 30%;
+}
+
+.chatBotNose {
+    height: 80%;
+    width: 80%;
+
+    grid-area: 3/3;
+
+    display: grid;
+    grid-template: 60% 1fr/30% 1fr 30%;
+    grid-template-areas:
+        '. UpperNose .'
+        'UnderNose UnderNose UnderNose';
+}
+
+.chatBotNose>div {
+    background-color: wheat;
+    border-radius: 10%;
+}
+
+.UpperNose {
+    grid-area: UpperNose;
+}
+
+.UnderNose {
+    grid-area: UnderNose;
+}
+
+.chatBotMouth {
+    background-color: black;
+    border-radius: 10%;
+
+    height: 80%;
+    width: 80%;
+
+    grid-area: 5/2/span 1/span 3;
+
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+}
+
+.chatBotMouth>div {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.chatBox {
+    margin-top: 4dvh;
+    margin-left: 4dvh;
+    padding: 1dvh;
+
+    border: outset;
+    user-select: none;
+    overflow: auto;
+
+    height: 30%;
+    width: 30%;
+
+    align-self: flex-start;
+}
+
+.chatBox>div {
+    border: inset;
+}
